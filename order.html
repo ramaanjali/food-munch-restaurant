@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food Much Restaurant | Order</title>
+
+    <link rel="stylesheet" href="css/order.css">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <img src="images/logo.jpeg" alt="Logo">
+
+        <h2>Food Much</h2>
+
+    </div>
+
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="menu.html">Menu</a>
+
+        <a href="order.html" class="active">Order</a>
+
+    </nav>
+
+</header>
+
+<!-- ================= BANNER ================= -->
+
+<section class="banner">
+
+    <h1>Place Your Order 🍽</h1>
+
+    <p>Fresh Food • Fast Delivery • Best Taste</p>
+
+</section>
+
+<!-- ================= ORDER FORM ================= -->
+
+<section class="order-container">
+
+<form id="orderForm">
+
+<h2>Customer Information</h2>
+
+<div class="input-box">
+
+<label>Full Name</label>
+
+<input type="text"
+       placeholder="Enter your full name"
+       required>
+
+</div>
+
+<div class="input-box">
+
+<label>Mobile Number</label>
+
+<input type="tel"
+       placeholder="Enter mobile number"
+       maxlength="10"
+       required>
+
+</div>
+
+<div class="input-box">
+
+<label>Email Address</label>
+
+<input type="email"
+       placeholder="Enter email"
+       required>
+
+</div>
+
+<div class="input-box">
+
+<label>Delivery Address</label>
+
+<textarea rows="4"
+placeholder="Enter complete delivery address"
+required></textarea>
+
+</div>
+
+<hr>
+
+<h2>Select Food Items</h2>
+
+<div class="food-list">
+
+<label><input type="checkbox"> Veg Pizza - ₹299</label>
+
+<label><input type="checkbox"> Chicken Burger - ₹199</label>
+
+<label><input type="checkbox"> Chicken Biryani - ₹349</label>
+
+<label><input type="checkbox"> Veg Noodles - ₹249</label>
+
+<label><input type="checkbox"> White Sauce Pasta - ₹279</label>
+
+<label><input type="checkbox"> Veg Fried Rice - ₹229</label>
+
+<label><input type="checkbox"> Club Sandwich - ₹179</label>
+
+<label><input type="checkbox"> Chicken Shawarma - ₹249</label>
+
+<label><input type="checkbox"> Gobi Manchurian - ₹199</label>
+
+<label><input type="checkbox"> Chocolate Ice Cream - ₹99</label>
+
+<label><input type="checkbox"> Brownie - ₹149</label>
+
+<label><input type="checkbox"> Black Forest Cake - ₹199</label>
+
+<label><input type="checkbox"> Coca-Cola - ₹60</label>
+
+<label><input type="checkbox"> Fresh Mango Juice - ₹120</label>
+
+<label><input type="checkbox"> Oreo Milkshake - ₹180</label>
+
+</div>
+
+<hr>
+
+<h2>Quantity</h2>
+
+<div class="input-box">
+
+<label>Select Quantity</label>
+
+<select required>
+
+<option value="">Choose Quantity</option>
+
+<option>1</option>
+
+<option>2</option>
+
+<option>3</option>
+
+<option>4</option>
+
+<option>5</option>
+
+</select>
+
+</div>
+    <hr>
+
+    <!-- ================= PAYMENT ================= -->
+
+    <h2>Payment Method</h2>
+
+    <div class="payment-method">
+
+        <label>
+            <input type="radio" name="payment" required>
+            Cash on Delivery
+        </label>
+
+        <label>
+            <input type="radio" name="payment">
+            PhonePe
+        </label>
+
+        <label>
+            <input type="radio" name="payment">
+            Google Pay
+        </label>
+
+        <label>
+            <input type="radio" name="payment">
+            Paytm
+        </label>
+
+        <label>
+            <input type="radio" name="payment">
+            Credit / Debit Card
+        </label>
+
+        <label>
+            <input type="radio" name="payment">
+            UPI
+        </label>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= DELIVERY ================= -->
+
+    <h2>Delivery Type</h2>
+
+    <div class="payment-method">
+
+        <label>
+            <input type="radio" name="delivery" required>
+            Standard Delivery (30-45 Minutes)
+        </label>
+
+        <label>
+            <input type="radio" name="delivery">
+            Express Delivery (15-20 Minutes)
+        </label>
+
+    </div>
+
+    <hr>
+
+    <!-- ================= SPECIAL INSTRUCTIONS ================= -->
+
+    <h2>Special Instructions</h2>
+
+    <textarea
+        rows="5"
+        placeholder="Write your special instructions here... (Optional)">
+    </textarea>
+
+    <hr>
+
+    <!-- ================= ORDER SUMMARY ================= -->
+
+    <div class="summary">
+
+        <h2>Order Summary</h2>
+
+        <table>
+
+            <tr>
+                <th>Items</th>
+                <th>Quantity</th>
+            </tr>
+
+            <tr>
+                <td>Selected Food Items</td>
+                <td>As Selected</td>
+            </tr>
+
+            <tr>
+                <td>Delivery Charge</td>
+                <td>₹40</td>
+            </tr>
+
+            <tr>
+                <td>GST</td>
+                <td>5%</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="buttons">
+
+        <button type="reset" class="reset-btn">
+
+            Reset
+
+        </button>
+
+        <button type="submit" class="submit-btn">
+
+            Place Order
+
+        </button>
+
+    </div>
+
+</form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>Food Much Restaurant</h2>
+
+        <p>Fresh Food • Fast Delivery • Best Taste</p>
+
+        <p>📍 Kakinada, Andhra Pradesh</p>
+
+        <p>📞 +91 9876543210</p>
+
+        <p>✉ foodmuch@gmail.com</p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+
+        </div>
+
+        <hr>
+
+        <p>
+
+            © 2026 Food Much Restaurant. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/order.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,817 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf5;
+    color: #241b16;
+    min-height: 100vh;
+    padding-bottom: 85px;
+}
+
+
+/* ================================
+   TOP BAR
+================================ */
+
+.top-bar {
+    height: 42px;
+    background: #241b16;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+    font-size: 13px;
+}
+
+.top-message {
+    font-weight: 500;
+}
+
+.order-button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+
+    border: 1px solid #ffffff;
+    padding: 7px 16px;
+    border-radius: 20px;
+
+    transition: 0.25s ease;
+}
+
+.order-button:hover {
+    background: #ffffff;
+    color: #241b16;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255, 250, 245, 0.96);
+    border-bottom: 1px solid #eee3da;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f36f21;
+    border-radius: 13px;
+
+    font-size: 23px;
+}
+
+.brand h2 {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.brand span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #f36f21;
+    margin-top: 3px;
+    font-weight: 700;
+}
+
+.profile-button {
+    width: 43px;
+    height: 43px;
+
+    border: 1px solid #e7d8cd;
+    border-radius: 50%;
+
+    background: #ffffff;
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.25s ease;
+}
+
+.profile-button:hover {
+    background: #f36f21;
+    border-color: #f36f21;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 55px 9% 45px;
+
+    background:
+        radial-gradient(circle at 80% 45%, #ffe4d1 0, transparent 28%),
+        linear-gradient(135deg, #fffaf5, #fff1e7);
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.hero-label {
+    display: inline-block;
+
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+
+    color: #f36f21;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 75px);
+    line-height: 0.98;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 450px;
+
+    color: #756860;
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+}
+
+
+/* ================================
+   HERO BUTTONS
+================================ */
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    text-decoration: none;
+    padding: 13px 23px;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.primary-button {
+    background: #f36f21;
+    color: #ffffff;
+}
+
+.primary-button:hover {
+    background: #d95b12;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 1px solid #d9c9be;
+    color: #352a24;
+    background: #ffffff;
+}
+
+.secondary-button:hover {
+    border-color: #f36f21;
+    color: #f36f21;
+}
+
+
+/* ================================
+   HERO FOOD
+================================ */
+
+.hero-food {
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-circle {
+    width: 290px;
+    height: 290px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150px;
+
+    background:
+        radial-gradient(circle at 35% 30%, #fff6ee, #ffd3b6);
+
+    box-shadow:
+        0 25px 55px rgba(80, 45, 25, 0.14);
+}
+
+.floating-food {
+    position: absolute;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border-radius: 18px;
+
+    font-size: 29px;
+
+    box-shadow:
+        0 12px 30px rgba(60, 35, 20, 0.12);
+}
+
+.food-one {
+    top: 45px;
+    right: 25px;
+}
+
+.food-two {
+    bottom: 60px;
+    left: 25px;
+}
+
+.food-three {
+    bottom: 10px;
+    right: 80px;
+}
+
+
+/* ================================
+   FOOD SECTION
+================================ */
+
+.food-section {
+    padding: 70px 9%;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading > span {
+    color: #f36f21;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.section-heading p {
+    color: #82766e;
+    font-size: 14px;
+}
+
+
+/* ================================
+   FOOD CARD
+================================ */
+
+.food-card {
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(120deg, #2b211c, #49352b);
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 50px rgba(50, 30, 20, 0.13);
+
+    transition: 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card-content {
+    padding: 45px;
+    max-width: 570px;
+    color: #ffffff;
+}
+
+.small-title {
+    color: #ffb07d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.food-card h2 {
+    font-size: 35px;
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+.food-card p {
+    color: #d9cec7;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.food-card-button {
+    border: 0;
+    background: #f36f21;
+    color: #ffffff;
+
+    padding: 12px 20px;
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.food-card-image {
+    width: 40%;
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle, #70472f, #3b2b24);
+}
+
+.large-food {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 100px;
+
+    background: #fff0e4;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+
+/* ================================
+   BOTTOM NAVIGATION
+================================ */
+
+.bottom-nav {
+    position: fixed;
+
+    left: 50%;
+    bottom: 15px;
+
+    transform: translateX(-50%);
+
+    width: min(420px, 90%);
+
+    height: 66px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border: 1px solid #eee3da;
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 45px rgba(45, 30, 20, 0.14);
+
+    z-index: 1000;
+}
+
+.nav-item {
+    width: 90px;
+    height: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    border: 0;
+    background: transparent;
+
+    color: #877b73;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    border-radius: 14px;
+
+    transition: 0.2s ease;
+}
+
+.nav-item span {
+    font-size: 19px;
+}
+
+.nav-item small {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    color: #f36f21;
+    background: #fff1e8;
+}
+
+
+/* ================================
+   LOGIN OVERLAY
+================================ */
+
+.login-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(20, 14, 11, 0.58);
+
+    backdrop-filter: blur(5px);
+
+    z-index: 2000;
+
+    padding: 20px;
+}
+
+.login-overlay.show {
+    display: flex;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 390px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    position: relative;
+
+    box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.25);
+}
+
+.close-button {
+    position: absolute;
+
+    top: 16px;
+    right: 17px;
+
+    width: 34px;
+    height: 34px;
+
+    border: 0;
+    border-radius: 50%;
+
+    background: #f7f2ee;
+
+    font-size: 22px;
+    color: #6d625b;
+
+    cursor: pointer;
+}
+
+.login-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: #fff0e5;
+
+    font-size: 25px;
+
+    margin-bottom: 17px;
+}
+
+.login-box h2 {
+    font-size: 28px;
+}
+
+.login-subtitle {
+    color: #82766e;
+    font-size: 13px;
+    line-height: 1.5;
+
+    margin: 7px 0 25px;
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #ded4ce;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #f36f21;
+    box-shadow: 0 0 0 3px rgba(243, 111, 33, 0.09);
+}
+
+.login-submit {
+    width: 100%;
+
+    border: 0;
+    border-radius: 8px;
+
+    padding: 13px;
+
+    background: #f36f21;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    transition: 0.2s ease;
+}
+
+.login-submit:hover {
+    background: #d95b12;
+}
+
+.signup-text {
+    text-align: center;
+
+    margin-top: 20px;
+
+    font-size: 12px;
+    color: #81756d;
+}
+
+.signup-text span {
+    color: #f36f21;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+
+    .top-bar {
+        padding: 0 5%;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 7% 50px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-food {
+        width: 330px;
+        height: 330px;
+        margin-top: 35px;
+    }
+
+    .food-circle {
+        width: 230px;
+        height: 230px;
+        font-size: 115px;
+    }
+
+    .food-section {
+        padding: 55px 7%;
+    }
+
+    .food-card {
+        flex-direction: column;
+    }
+
+    .food-card-content {
+        padding: 35px;
+        max-width: none;
+    }
+
+    .food-card-image {
+        width: 100%;
+        min-height: 220px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .top-bar {
+        height: auto;
+        min-height: 42px;
+        padding: 8px 5%;
+        gap: 8px;
+    }
+
+    .top-message {
+        font-size: 10px;
+    }
+
+    .order-button {
+        padding: 6px 10px;
+        font-size: 9px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .brand-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .brand h2 {
+        font-size: 16px;
+    }
+
+    .brand span {
+        font-size: 7px;
+    }
+
+    .hero {
+        padding-top: 45px;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .hero-food {
+        width: 290px;
+        height: 290px;
+    }
+
+    .food-circle {
+        width: 205px;
+        height: 205px;
+        font-size: 100px;
+    }
+
+    .floating-food {
+        width: 50px;
+        height: 50px;
+        font-size: 23px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .food-card h2 {
+        font-size: 27px;
+    }
+
+    .food-card-content {
+        padding: 28px;
+    }
+
+    .login-box {
+        padding: 30px 23px;
+    }
+}

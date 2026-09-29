@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Food Munch Restaurant - Delicious food delivered to your doorstep">
+
+    <title>Food Munch | Restaurant</title>
+
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!-- ================= TOP BAR ================= -->
+
+    <div class="top-bar">
+        <p>🍴 Welcome to Food Munch Restaurant</p>
+
+        <a href="order.html" class="order-button">
+            ORDER NOW
+        </a>
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-icon">🍽️</div>
+
+            <div>
+                <h2>FOOD MUNCH</h2>
+                <span>RESTAURANT</span>
+            </div>
+        </div>
+
+        <button class="profile-button" onclick="openLogin()" aria-label="Profile">
+            👤
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    FRESH • TASTY • DELICIOUS
+                </span>
+
+                <h1>
+                    Good Food.<br>
+                    Good Mood.
+                </h1>
+
+                <p>
+                    Enjoy delicious meals prepared with fresh
+                    ingredients and served with love.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="order.html" class="primary-button">
+                        ORDER FOOD
+                    </a>
+
+                    <a href="index.html" class="secondary-button">
+                        VIEW MENU
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-food">
+
+                <div class="food-circle">
+                    🍔
+                </div>
+
+                <div class="floating-food food-one">
+                    🍕
+                </div>
+
+                <div class="floating-food food-two">
+                    🍟
+                </div>
+
+                <div class="floating-food food-three">
+                    🥤
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOD CARD ================= -->
+
+        <section class="food-section">
+
+            <div class="section-heading">
+
+                <span>OUR SPECIAL</span>
+
+                <h2>Delicious Food For You</h2>
+
+                <p>
+                    Freshly prepared food whenever you want.
+                </p>
+
+            </div>
+
+
+            <div class="food-card" onclick="openFood()">
+
+                <div class="food-card-content">
+
+                    <span class="small-title">
+                        FOOD DELIVERY
+                    </span>
+
+                    <h2>
+                        Your Favourite Food,
+                        Delivered Fast.
+                    </h2>
+
+                    <p>
+                        Choose from our delicious menu and
+                        enjoy your favourite meals at home.
+                    </p>
+
+                    <button class="food-card-button">
+                        ORDER FOOD →
+                    </button>
+
+                </div>
+
+
+                <div class="food-card-image">
+
+                    <div class="large-food">
+                        🍕
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= BOTTOM NAVIGATION ================= -->
+
+    <nav class="bottom-nav">
+
+        <button class="nav-item active" onclick="goHome()">
+
+            <span>⌂</span>
+            <small>HOME</small>
+
+        </button>
+
+
+        <a href="index.html" class="nav-item">
+
+            <span>🍔</span>
+            <small>FOOD</small>
+
+        </a>
+
+
+        <button class="nav-item" onclick="openLogin()">
+
+            <span>👤</span>
+            <small>PROFILE</small>
+
+        </button>
+
+    </nav>
+
+
+    <!-- ================= LOGIN POPUP ================= -->
+
+    <div class="login-overlay" id="loginOverlay">
+
+        <div class="login-box">
+
+            <button class="close-button" onclick="closeLogin()">
+                ×
+            </button>
+
+
+            <div class="login-icon">
+                👤
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p class="login-subtitle">
+                Login to continue ordering your favourite food.
+            </p>
+
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="login-submit">
+
+                    LOGIN
+
+                </button>
+
+            </form>
+
+
+            <p class="signup-text">
+                Don't have an account?
+                <span onclick="signup()">SIGN UP</span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1026 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+        RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffaf5;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/*=========================================
+        HEADER
+=========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.12);
+
+    z-index:1000;
+
+}
+
+/*=========================================
+        LOGO
+=========================================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    border:3px solid orange;
+
+    object-fit:cover;
+
+}
+
+.logo h2{
+
+    color:#ff6600;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/*=========================================
+        NAVBAR
+=========================================*/
+
+.navbar{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+    position:relative;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+
+    color:#ff6600;
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:3px;
+
+    background:#ff6600;
+
+    transition:.4s;
+
+}
+
+.navbar a:hover::after,
+.navbar a.active::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+        BANNER
+=========================================*/
+
+.banner{
+
+    margin-top:80px;
+
+    width:100%;
+
+    height:260px;
+
+    background:linear-gradient(#ff6600,#ff6600),
+    url("../images/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.banner h1{
+
+    color:#fff;
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.banner p{
+
+    color:#fff;
+
+    font-size:20px;
+
+}
+
+/*=========================================
+        ORDER CONTAINER
+=========================================*/
+
+.order-container{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:60px auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+/*=========================================
+        FORM HEADINGS
+=========================================*/
+
+.order-container h2{
+
+    color:#ff6600;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.order-container hr{
+
+    margin:35px 0;
+
+    border:1px solid #eee;
+
+}
+
+/*=========================================
+        INPUT BOX
+=========================================*/
+
+.input-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+.input-box label{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    color:#333;
+
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select{
+
+    width:100%;
+
+    padding:14px;
+
+    font-size:17px;
+
+    border:2px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box select:focus{
+
+    border-color:#ff6600;
+
+    box-shadow:0 0 8px rgba(255,102,0,.25);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+/*=========================================
+        FOOD LIST
+=========================================*/
+
+.food-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.food-list label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px;
+
+    background:#fff7f0;
+
+    border:2px solid #ffd7b5;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.food-list label:hover{
+
+    background:#ffefe0;
+
+    border-color:#ff6600;
+
+    transform:translateY(-3px);
+
+}
+
+.food-list input[type="checkbox"]{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:#ff6600;
+
+}
+
+/*=========================================
+        PAYMENT METHOD
+=========================================*/
+
+.payment-method{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.payment-method label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px;
+
+    background:#fff7f0;
+
+    border:2px solid #ffd7b5;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+.payment-method label:hover{
+
+    background:#ffefe0;
+
+    border-color:#ff6600;
+
+    transform:scale(1.02);
+
+}
+
+.payment-method input[type="radio"]{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:#ff6600;
+
+}
+
+/*=========================================
+        ORDER SUMMARY
+=========================================*/
+
+.summary{
+
+    margin-top:30px;
+
+    background:#fffaf3;
+
+    border:2px solid #ffe0c2;
+
+    border-radius:12px;
+
+    padding:25px;
+
+}
+
+.summary h2{
+
+    color:#ff6600;
+
+    margin-bottom:20px;
+
+}
+
+.summary table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.summary table th{
+
+    background:#ff6600;
+
+    color:white;
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+.summary table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.summary table tr:hover{
+
+    background:#fff2e8;
+
+}
+
+/*=========================================
+        BUTTONS
+=========================================*/
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.reset-btn{
+
+    padding:14px 40px;
+
+    background:#999;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.reset-btn:hover{
+
+    background:#666;
+
+}
+
+.submit-btn{
+
+    padding:14px 45px;
+
+    background:#ff6600;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+    background:#e65100;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(255,102,0,.3);
+
+}
+
+.submit-btn:active{
+
+    transform:scale(.96);
+
+}
+
+/*=========================================
+        FORM ANIMATION
+=========================================*/
+
+.order-container{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+            FOOTER
+=========================================*/
+
+footer{
+
+    margin-top:80px;
+
+    background:#222;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.footer-content h2{
+
+    color:#ff6600;
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+    font-size:18px;
+
+    margin:10px 0;
+
+    line-height:28px;
+
+}
+
+.footer-content hr{
+
+    width:80%;
+
+    margin:25px auto;
+
+    border:1px solid rgba(255,255,255,.2);
+
+}
+
+/*=========================================
+        SOCIAL ICONS
+=========================================*/
+
+.footer-icons{
+
+    margin:25px 0;
+
+}
+
+.footer-icons a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:50px;
+
+    height:50px;
+
+    margin:0 10px;
+
+    border:2px solid #ff6600;
+
+    border-radius:50%;
+
+    color:#ff6600;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    transition:.4s;
+
+}
+
+.footer-icons a:hover{
+
+    background:#ff6600;
+
+    color:#fff;
+
+    transform:rotate(360deg) scale(1.1);
+
+    box-shadow:0 0 15px rgba(255,102,0,.5);
+
+}
+
+/*=========================================
+        HOVER EFFECTS
+=========================================*/
+
+.input-box input:hover,
+.input-box textarea:hover,
+.input-box select:hover{
+
+    border-color:#ff6600;
+
+}
+
+.food-list label:hover,
+.payment-method label:hover{
+
+    box-shadow:0 8px 18px rgba(255,102,0,.2);
+
+}
+
+.summary:hover{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/*=========================================
+        SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f2f2f2;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff6600;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#e65100;
+
+}
+
+/*=========================================
+        RESPONSIVE DESIGN
+=========================================*/
+
+@media(max-width:992px){
+
+.header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+.navbar{
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.banner h1{
+
+    font-size:40px;
+
+}
+
+.order-container{
+
+    width:95%;
+
+    padding:30px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.reset-btn,
+.submit-btn{
+
+    width:100%;
+
+    max-width:300px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.banner{
+
+    height:220px;
+
+}
+
+.banner h1{
+
+    font-size:32px;
+
+}
+
+.banner p{
+
+    font-size:18px;
+
+}
+
+.food-list{
+
+    grid-template-columns:1fr;
+
+}
+
+.payment-method{
+
+    grid-template-columns:1fr;
+
+}
+
+.summary table{
+
+    display:block;
+
+    overflow-x:auto;
+
+}
+
+.order-container{
+
+    padding:20px;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+
+}
+
+.navbar{
+
+    gap:15px;
+
+}
+
+.navbar a{
+
+    font-size:16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.header{
+
+    padding:15px;
+
+}
+
+.logo img{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+
+}
+
+.banner h1{
+
+    font-size:28px;
+
+}
+
+.banner p{
+
+    font-size:16px;
+
+}
+
+.order-container h2{
+
+    font-size:24px;
+
+}
+
+.input-box label{
+
+    font-size:16px;
+
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select{
+
+    font-size:16px;
+
+}
+
+.food-list label{
+
+    font-size:15px;
+
+}
+
+.payment-method label{
+
+    font-size:15px;
+
+}
+
+.summary h2{
+
+    font-size:22px;
+
+}
+
+.footer-content h2{
+
+    font-size:28px;
+
+}
+
+.footer-content p{
+
+    font-size:16px;
+
+}
+
+.footer-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    font-size:20px;
+
+}
+
+}
+
+/*=========================================
+        BUTTON RIPPLE EFFECT
+=========================================*/
+
+.submit-btn,
+.reset-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.submit-btn::before,
+.reset-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.3);
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.5s;
+
+}
+
+.submit-btn:hover::before,
+.reset-btn:hover::before{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+/*=========================================
+            END OF FILE
+=========================================*/

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Food Much Restaurant | Menu</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Boxicons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+
+            <img
+                src="images/logo.jpeg"
+                alt="Logo">
+
+            <h2>Food Much</h2>
+
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/menu.html"
+               class="active">
+                Menu
+            </a>
+
+            <a href="/order.html">
+                Order
+            </a>
+
+            <a href="#popular">
+                Popular
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="menu-banner">
+
+        <div class="banner-content">
+
+            <h1>
+                Our Delicious Menu 🍽️
+            </h1>
+
+            <p>
+                Freshly prepared with premium
+                ingredients and served with love.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search your favourite food..."
+        >
+
+        <button id="searchBtn">
+
+            <i class='bx bx-search'></i>
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= CATEGORY ================= -->
+
+    <section class="categories">
+
+        <button
+            class="category active"
+            data-category="All">
+
+            All
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Pizza">
+
+            Pizza
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Burger">
+
+            Burger
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Biryani">
+
+            Biryani
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Noodles">
+
+            Noodles
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Pasta">
+
+            Pasta
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Rice">
+
+            Rice
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Desserts">
+
+            Desserts
+
+        </button>
+
+
+        <button
+            class="category"
+            data-category="Drinks">
+
+            Drinks
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= MENU ITEMS ================= -->
+
+<section class="menu-section" id="popular">
+
+    <h2>Our Menu 🍽️</h2>
+
+    <div class="menu-container" id="menuContainer">
+
+        <p class="loading">Loading food items...</p>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ================= TODAY'S SPECIAL ================= -->
+
+    <section class="special-section">
+
+        <h2>
+            Today's Special
+        </h2>
+
+
+        <div class="special-container">
+
+
+            <div class="special-card">
+
+                <img
+                    src="images/pizza2.jpg"
+                    alt="Special Pizza">
+
+                <div class="special-info">
+
+                    <h3>
+                        Special Family Pizza Combo
+                    </h3>
+
+                    <p>
+                        Large Pizza + Garlic Bread +
+                        2 Soft Drinks
+                    </p>
+
+                    <h4>
+                        ₹699
+                    </h4>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="special-card">
+
+                <img
+                    src="images/biryani2.webp"
+                    alt="Special Biryani">
+
+                <div class="special-info">
+
+                    <h3>
+                        Royal Chicken Biryani
+                    </h3>
+
+                    <p>
+                        Hyderabadi Dum Biryani
+                        with Double Chicken
+                    </p>
+
+                    <h4>
+                        ₹499
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= OFFERS ================= -->
+
+    <section class="offer-section">
+
+        <h2>
+            Today's Offers 🎉
+        </h2>
+
+
+        <div class="offer-container">
+
+
+            <div class="offer-card">
+
+                <i class='bx bxs-offer'></i>
+
+                <h3>
+                    20% OFF
+                </h3>
+
+                <p>
+                    On all Pizza Orders
+                </p>
+
+            </div>
+
+
+
+            <div class="offer-card">
+
+                <i class='bx bxs-gift'></i>
+
+                <h3>
+                    Buy 1 Get 1
+                </h3>
+
+                <p>
+                    Chicken Burger
+                </p>
+
+            </div>
+
+
+
+            <div class="offer-card">
+
+                <i class='bx bxs-drink'></i>
+
+                <h3>
+                    Free Soft Drink
+                </h3>
+
+                <p>
+                    Orders above ₹500
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CHEF RECOMMENDS ================= -->
+
+    <section class="chef-section">
+
+        <h2>
+            Chef's Recommendation 👨‍🍳
+        </h2>
+
+
+        <div class="chef-card">
+
+            <img
+                src="images/chicken-shawarma.jpeg"
+                alt="Chef Special">
+
+
+            <div>
+
+                <h3>
+                    Chicken Shawarma
+                </h3>
+
+                <p>
+                    Our chef's signature dish
+                    prepared with rich Indian spices
+                    and served fresh every day.
+                </p>
+
+                <h4>
+                    ₹399
+                </h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <h2>
+                Food Much Restaurant
+            </h2>
+
+            <p>
+                Fresh Food • Fast Delivery • Best Taste
+            </p>
+
+            <p>
+                📍 Kakinada, Andhra Pradesh
+            </p>
+
+            <p>
+                📞 +91 9876543210
+            </p>
+
+            <p>
+                ✉ foodmuch@gmail.com
+            </p>
+
+
+            <div class="footer-icons">
+
+                <a href="#">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+
+                <a href="#">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+
+            </div>
+
+
+            <hr>
+
+
+            <p>
+                © 2026 Food Much Restaurant.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>
